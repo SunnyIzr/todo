@@ -4,7 +4,7 @@ class CreateTasks < ActiveRecord::Migration
 
   def change
     create_table :tasks do |row|
-      row.string :status
+      row.boolean :complete?
       row.string :name
       row.date :due_date
       row.datetime :created_at
